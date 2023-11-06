@@ -1,31 +1,31 @@
 <html>
+
 <head>
-<style>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 25px;
+        }
 
-    body {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 25px;
-    }
-
-    h1 {
-        color: red;
-    }
-
-</style>
+        h1 {
+            color: red;
+        }
+    </style>
 </head>
 
 
 <body>
-    <h1>Covid Stats!</h1><br>
+    <h1>Covid Stats!</h1>
     <form method="POST">
-        <label >Enter a Country Code</label><br><br>
-    <input placeholder="Country Code" name="text">
-    <input type="submit">
-</form>
-    <img src="{{image }}">
+        <label>Enter a country name</label><br> <br>
+        <input placeholder="Countryname" name="text">
+        <input type="submit">
 
+    </form>
+    <iframe src="{{ image }}"></iframe>
+    <p>You have {{ count }}</p>
 
-    <p>You have {{ count }} Visitors.</p>
 </body>
+
 </html>
